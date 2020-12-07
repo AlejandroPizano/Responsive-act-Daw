@@ -1,0 +1,378 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./fonts/icomoon.eot?8f0wr6');
+  src:  url('./fonts/icomoon.eot?8f0wr6#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf') format('truetype'),
+    url('./fonts/icomoon.woff') format('woff'),
+    url('./fonts/icomoon.svg?8f0wr6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+body{
+  margin:0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Fjalla One',sans-serif;
+  font-weight: normal;
+}
+h1{
+  margin: 0px;
+  line-height: 1.5em;
+  font-size: 40px;
+  letter-spacing: -.2px;
+  color:white
+}
+h2{
+  color:#1b2127;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+h1 strong{
+  color: #1b2127;
+}
+figure{
+  margin: 0;
+}
+
+.header a{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0px 10px;
+}
+.menu{
+  height: inherit;
+}
+.menu ul{
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+.menu ul li{
+  margin: 0 20px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color:#11112e;
+  color: white;
+  height: 70px;
+}
+.logo img{
+  height: 50px;
+  vertical-align: middle;
+}
+.footer{
+  display: flex;
+  color: white;
+  background-color: #1b2127;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.event-title{
+  margin-left: 20px;
+}
+.event-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.event{
+  border: 1px ;
+  margin: 1%;
+  width: 48%;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f4fbff;
+}
+.event img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.event-detail{
+  margin:20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.event p{
+  text-align: left;
+}
+.event a{
+  margin: 10px;
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #026fff;
+  border-radius: 5px;
+}
+.footer a{
+  color: white;
+  padding: 0 10 px;
+}
+.texto_footer{
+  margin: 15px 15px;
+}
+.container{
+  max-width: 1000px;
+  flex: 1;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+.burger-button{
+  width: 45px;
+  height: 45px;
+  border-radius: 70%;
+  background-color:rgba(14, 14, 30, 0.812);
+  display: none;
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  left: 5px;
+  top: 5px;
+  color: white;
+}
+
+/* para pantallas moviles muy pequeñas */
+@media screen and (max-width: 360px){
+  .event-detail h3{
+    font-size: 12px
+  }
+  .event-detail p{
+    font-size: 10px
+  }
+  .menu{
+    width: 80vw;
+  }
+  .event-detail a{
+    padding: 9px 90px;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+  .header{
+    padding: right;
+  }
+}
+
+/* para dispositivos moviles promedio*/
+@media screen and (max-width: 530px){
+  body{background-color: rgba(75, 75, 112, 0.685);
+
+  }
+
+
+  .event-detail h3{
+    font-size: 16px
+  }
+  .event-detail p{
+    font-size: 14px
+  }
+  .menu{
+    width: 90vw;
+  }
+  .event-detail a{
+    padding: 12px 110px;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+  .header{
+    padding: inherit;
+  }
+}
+/* Para tabletas y telefonos grandes*/
+@media screen and (max-width:900px){
+
+  .burger-button{
+    display: block;
+  }
+  body{background-color: rgba(49, 49, 83, 0.747);
+
+  }
+
+  .menu{
+    position: fixed;
+    background-color: #1f3270d7;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .7s
+  }
+  .menu.is-active{
+    left: 0;
+  }
+  .header{
+    display: block;
+    height: auto;
+  }
+  .header ul{
+    display: initial;
+  }
+  .header ul li{
+    justify-content: inherit;
+    height: 65px;
+
+  }
+  .header a{
+    justify-content: center;
+    height: 40px;
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin-bottom: .5em;
+  }
+  .header .logo{
+    text-align: center;
+  }
+  .event{
+    width: auto;
+    flex-shrink: initial;
+    background-color: rgb(21, 21, 80);
+  }
+  .event img{
+    width: 100%;
+  }
+  .event-imageContainer{
+    width: 100%;
+  }
+  .event-detail a{
+    padding: 10px 100px;
+    background-color: midnightblue;
+
+  }
+}
+
+@media screen and (max-width: 1024px){
+
+
+  .container{
+    padding: 0 1.5em;
+  }
+
+  .event-detail p{
+    font-size: 18px
+  }
+  .event-detail {
+    text-align: 10px 100px;
+  }
+  .event-title{
+    margin: 18px;
+  }
+  .event-detail h3{
+    font-size: 20px
+  }
+  body{background: rgba(88, 88, 107, 0.911);
+  }
+}
+
+
+/* escritorios grandes */
+
+@media screen and (max-width: 1920px){
+
+  .container{
+    padding: 0 1em;
+  }
+  .event-title{
+    margin: 20px;
+  }
+  .event-detail h3{
+    font-size: 30px
+  }
+  .event-detail p{
+    font-size: 28px
+  }
+  .event-detail a{
+    padding: 20px 140px;
+    background-color: #1a1247ea;
+    color:white;
+  }
+  .footer{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:#999;
+  }
+}
+/* pantallas gigantes */
+@media screen and (max-width: 3000px){
+
+  .container{
+    padding: 0 1em;
+  }
+  .event-title{
+    margin: 25px;
+  }
+  .event-detail h3{
+    font-size: 50px
+  }
+  .event-detail p{
+    font-size: 45px
+  }
+  .event-detail a{
+    padding: 30px 180px;
+    background-color: #201a44ea;
+    color:white;
+  }
+  .footer{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:rgb(21, 21, 80);
+  }
+}
