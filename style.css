@@ -175,7 +175,7 @@ figure{
   color: white;
 }
 
-/* para pantallas moviles muy pequeñas */
+/* para pantallas moviles  */
 @media screen and (max-width: 360px){
   .event-detail h3{
     font-size: 12px
@@ -204,7 +204,8 @@ figure{
   body{background-color: rgba(75, 75, 112, 0.685);
 
   }
-
+  .menu{position: fixed;
+  display: flex;}
 
   .event-detail h3{
     font-size: 16px
@@ -228,7 +229,7 @@ figure{
   }
 }
 /* Para tabletas y telefonos grandes*/
-@media screen and (max-width:900px){
+@media screen and (max-width:800px){
 
   .burger-button{
     display: block;
